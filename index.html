@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anurag Reddy Aenugu | Senior analytics leader</title>
+<meta name="description" content="Senior analytics leader with 12 years of experience building enterprise AI and ML platforms in procurement, cost and supply risk analytics.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Anurag Reddy Aenugu">
+<meta property="og:description" content="Senior analytics leader building enterprise AI and ML platforms.">
+<meta name="theme-color" content="#EBEFF0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1A20" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%23C2255C' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23C2255C'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light dark;
+    --paper: #EBEFF0;
+    --ink: #14232B;
+    --muted: #4A5C65;
+    --contour: #B4C6CD;
+    --rule: rgba(20, 35, 43, 0.16);
+    --flag: #C2255C;
+    --sans: "Bricolage Grotesque", "Helvetica Neue", Arial, system-ui, sans-serif;
+    --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0E1A20;
+      --ink: #E6EEF1;
+      --muted: #9FB2BB;
+      --contour: #26404C;
+      --rule: rgba(230, 238, 241, 0.16);
+      --flag: #FF6B9A;
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 1.125rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+  a:hover { color: var(--flag); }
+  a:focus-visible { outline: 3px solid var(--flag); outline-offset: 3px; border-radius: 2px; }
+  p { margin: 0 0 1em; text-wrap: pretty; }
+  h1, h2, h3 { font-family: var(--sans); margin: 0; }
+
+  .skip {
+    position: absolute; left: 1rem; top: -4rem;
+    background: var(--ink); color: var(--paper);
+    padding: 0.6rem 1rem; font-family: var(--sans); z-index: 10;
+  }
+  .skip:focus { top: 1rem; }
+
+  .wrap { width: min(72rem, 100% - 3rem); margin-inline: auto; }
+
+  /* ---------- Hero ---------- */
+  .hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    min-height: min(92vh, 50rem);
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-art {
+    position: absolute; inset: 0; z-index: -2;
+    width: 100%; height: 100%;
+    color: var(--contour);
+  }
+  .hero::after {
+    content: "";
+    position: absolute; inset: 0; z-index: -1;
+    background:
+      linear-gradient(0deg, var(--paper) 0%, transparent 22%),
+      linear-gradient(90deg, var(--paper) 8%, transparent 62%);
+    pointer-events: none;
+  }
+  .contour-accent {
+    stroke: var(--flag);
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: draw 2.6s 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+  .summit {
+    fill: var(--flag);
+    opacity: 0;
+    animation: appear 0.5s 2.7s forwards;
+  }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  @keyframes appear { to { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .contour-accent { animation: none; stroke-dashoffset: 0; }
+    .summit { animation: none; opacity: 1; }
+  }
+
+  .nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem; padding-top: 1.75rem; font-family: var(--sans); font-size: 0.95rem; }
+  .nav a { text-decoration: none; }
+  .nav a:hover { text-decoration: underline; }
+
+  .hero-body { margin-block: auto; padding: 4rem 0 5rem; }
+  .hero h1 {
+    font-weight: 800;
+    font-size: clamp(3.25rem, 10vw, 8rem);
+    line-height: 0.92;
+    letter-spacing: -0.04em;
+  }
+  .hero h1 span { display: block; }
+  .lead {
+    font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+    line-height: 1.4;
+    max-width: 28em;
+    margin: 1.75rem 0 0.5rem;
+  }
+  .now { color: var(--muted); margin: 0 0 2rem; }
+  .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.75rem; font-family: var(--sans); }
+  .button {
+    display: inline-block;
+    background: var(--ink); color: var(--paper);
+    padding: 0.7rem 1.3rem;
+    border-radius: 4px;
+    font-weight: 600; text-decoration: none;
+  }
+  .button:hover { background: var(--flag); color: var(--paper); }
+
+  /* ---------- Sections ---------- */
+  .section {
+    display: grid;
+    grid-template-columns: 11rem minmax(0, 1fr);
+    gap: 1.5rem 3rem;
+    padding: 4.5rem 0;
+    border-top: 1px solid var(--rule);
+  }
+  .section > h2 { font-size: 1.25rem; font-weight: 800; letter-spacing: -0.01em; line-height: 1.2; }
+  .content { max-width: 42rem; }
+  .content > :last-child { margin-bottom: 0; }
+
+  .awards { list-style: none; padding: 0; margin: 1.75rem 0 0; }
+  .awards li { padding: 0.9rem 0; border-top: 1px solid var(--rule); }
+  .awards strong { font-family: var(--sans); font-weight: 600; }
+
+  /* Selected work: a ledger, not cards */
+  .work { list-style: none; margin: 0; padding: 0; }
+  .work li { padding: 1.75rem 0; border-top: 1px solid var(--rule); }
+  .work li:first-child { padding-top: 0; border-top: 0; }
+  .work li:last-child { padding-bottom: 0; }
+  .work h3 { font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; margin-bottom: 0.4rem; }
+  .work p { margin-bottom: 0.6em; }
+  .work .result { font-family: var(--sans); font-weight: 600; font-size: 1rem; line-height: 1.5; margin: 0; }
+
+  /* Experience: an actual sequence, so a timeline is honest here */
+  .roles { list-style: none; margin: 0; padding: 0; }
+  .role { position: relative; padding: 0 0 3rem 2rem; border-left: 1px solid var(--rule); }
+  .role:last-child { padding-bottom: 0; border-left-color: transparent; }
+  .role::before {
+    content: "";
+    position: absolute; left: -6px; top: 0.55rem;
+    width: 11px; height: 11px; border-radius: 50%;
+    background: var(--paper); border: 2px solid var(--muted);
+  }
+  .role.current::before { background: var(--flag); border-color: var(--flag); }
+  .role h3 { font-size: 1.3rem; font-weight: 600; letter-spacing: -0.01em; }
+  .role .meta { font-family: var(--sans); font-size: 0.95rem; color: var(--muted); margin: 0.2rem 0 1rem; }
+  .role p { margin-bottom: 0.8em; }
+
+  .facts { margin: 0; }
+  .facts dt { font-family: var(--sans); font-weight: 600; margin-top: 1.25rem; }
+  .facts dt:first-child { margin-top: 0; }
+  .facts dd { margin: 0.15rem 0 0; }
+
+  .contact-links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.75rem; font-family: var(--sans); font-size: 1.15rem; margin-top: 1.25rem; }
+
+  footer { border-top: 1px solid var(--rule); padding: 2rem 0 3rem; font-family: var(--sans); font-size: 0.9rem; color: var(--muted); }
+
+  @media (max-width: 760px) {
+    body { font-size: 1.05rem; }
+    .section { grid-template-columns: 1fr; padding: 3rem 0; }
+    .hero-body { padding: 3rem 0 4rem; }
+    .hero::after {
+      background:
+        linear-gradient(0deg, var(--paper) 0%, transparent 18%),
+        linear-gradient(180deg, var(--paper) 30%, transparent 85%);
+    }
+  }
+  @media print {
+    .hero-art, .hero::after, .nav, .skip { display: none; }
+    .hero { min-height: 0; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hero">
+  <svg class="hero-art" viewBox="0 0 1200 800" preserveAspectRatio="xMaxYMid slice" aria-hidden="true" focusable="false">
+<!--CONTOURS-->
+  </svg>
+  <div class="wrap">
+    <nav class="nav" aria-label="Sections">
+      <a href="#work">Selected work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+  <div class="wrap hero-body">
+    <h1><span>Anurag Reddy</span> <span>Aenugu</span></h1>
+    <p class="lead">Senior analytics leader building enterprise AI and ML platforms.</p>
+    <p class="now">Senior Analytics Manager at Caterpillar.</p>
+    <div class="actions">
+      <a class="button" href="mailto:hellanurag@gmail.com">Email me</a>
+      <a href="https://www.linkedin.com/in/anuragreddya/">LinkedIn</a>
+      <a href="Anurag_Reddy_Aenugu_Resume.pdf">Download résumé (PDF)</a>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+
+  <section class="section" id="about">
+    <h2>About</h2>
+    <div class="content">
+      <p>I have 12 years of experience building enterprise AI and ML platforms. For seven of those years I have led global data science and engineering teams, three of them as a leader of leaders.</p>
+      <p>My work sits where analytics meets big operational decisions: what a company buys, which suppliers might fail, and how to plan for parts years ahead.</p>
+      <ul class="awards">
+        <li><strong>Caterpillar CEO Award</strong> (top 1%) for the $22B demand forecast.</li>
+        <li><strong>Tredence STAR Award</strong> (top 1%) for $10B supply chain optimization.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    <h2>Selected work at Caterpillar</h2>
+    <ul class="content work">
+      <li>
+        <h3>Cost analytics</h3>
+        <p>An agentic AI platform built on knowledge graphs, with a suite of ensemble models, to optimize $25B of direct procurement spend.</p>
+        <p class="result">$300M+ in cost reduction opportunities identified and $25M+ in savings realized.</p>
+      </li>
+      <li>
+        <h3>Supply risk analytics</h3>
+        <p>Time series, tree-based and transformer models monitor 7K suppliers and 800K parts across 63 countries to predict supply disruptions. I tuned recall and precision deliberately, so planners would trust the alerts and use them.</p>
+        <p class="result">Captures more than 70% of potential disruptions with 50% lead accuracy.</p>
+      </li>
+      <li>
+        <h3>ChatDocs</h3>
+        <p>The company’s first generative AI platform, built on retrieval-augmented generation with LangChain, a vector database, a custom multi-modal extraction pipeline and human-in-the-loop validation.</p>
+        <p class="result">Processes 100K+ contracts and extracts 150+ elements, cutting the work from weeks to minutes.</p>
+      </li>
+      <li>
+        <h3>Demand forecast</h3>
+        <p>Extended reliable planning signals across 800K active parts.</p>
+        <p class="result">Coverage rose from 32% to 99% of spend ($22B).</p>
+      </li>
+      <li>
+        <h3>Enterprise semantic data layer</h3>
+        <p>A single, safe, consumption-ready source of data and standardized metrics for the analytics teams.</p>
+        <p class="result">Accelerated downstream analytics by an estimated 30%.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section" id="experience">
+    <h2>Experience</h2>
+    <ol class="content roles">
+      <li class="role current">
+        <h3>Senior Analytics Manager, Caterpillar</h3>
+        <p class="meta">June 2021 to present. Irving, TX. Fortune 50 manufacturer, $64B revenue.</p>
+        <p>I lead a global analytics team of 14: two analytics managers, a project manager, six data scientists and five data analysts. I own strategy and execution for enterprise AI in procurement, cost and risk analytics, and I recruit, mentor and develop the team through the full lifecycle of each ML product.</p>
+        <p>I was asked to advance analytics capabilities in India and built that organization from the ground up. I also mentor a class of 12 in AI at Purdue University through the Data Mine program, a partnership to develop future talent.</p>
+      </li>
+      <li class="role">
+        <h3>Lead Data Science Consultant, Tredence</h3>
+        <p class="meta">July 2017 to June 2021. San Jose, CA. Analytics services firm.</p>
+        <p>I led projects at Fortune 500 companies as a data science and engineering consultant. I led a team of 21 data scientists, engineers and developers on eCompass, a supply chain ML platform that predicts sales and optimizes supply chains, and reduced out-of-stock incidents by 6%.</p>
+        <p>I also designed an omni-channel data science as a service platform for personalized content, with automated A/B testing, customer segmentation and natural language generation. It cut the timeline for a new marketing campaign from 120 days to under 30 and improved click rates by 30%.</p>
+      </li>
+      <li class="role">
+        <h3>Data Scientist, Fuzzy Logix</h3>
+        <p class="meta">July 2014 to June 2017. Charlotte, NC. In-database analytics for finance.</p>
+        <p>I led five data scientists building DBLytix, an in-database analytics library, from algorithm development through packaging, testing, documentation and deployment. Multiple general availability releases on Teradata, Netezza and Aster generated more than $2M in revenue.</p>
+        <p>I also built fintech analytics for capital market index calculation and rebalancing, led client engagement and cloud deployment in Hong Kong, and trained six new hires and nine interns.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section" id="skills">
+    <h2>Skills</h2>
+    <dl class="content facts">
+      <dt>AI and ML</dt>
+      <dd>Generative AI, agentic AI, hybrid RAG, LangGraph, MCP, MLOps, knowledge graphs, LLMs, machine learning, NLP</dd>
+      <dt>Languages and tools</dt>
+      <dd>Python, SQL, PySpark, dbt, PyTorch, Keras, Scikit-learn, Pandas, Power BI, GitHub</dd>
+      <dt>Cloud and data platforms</dt>
+      <dd>AWS, Azure, GCP, Snowflake, Databricks, Spark, Hadoop</dd>
+    </dl>
+  </section>
+
+  <section class="section" id="education">
+    <h2>Education</h2>
+    <dl class="content facts">
+      <dt>Indian Institute of Technology (IIT) Kanpur, 2009 to 2014</dt>
+      <dd>Master of Technology in Mechanical Engineering (Computational Mechanics) and Bachelor of Technology in Mechanical Engineering. Thesis: deformation simulation using a parallel computational scheme for Optimal Transportation Meshfree methods.</dd>
+      <dt>KVPY fellowship</dt>
+      <dd>Awarded for excellence in science by the Department of Science and Technology, Government of India, to 125 students nationwide.</dd>
+    </dl>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <div class="content">
+      <p>The best ways to reach me are email and LinkedIn.</p>
+      <div class="contact-links">
+        <a href="mailto:hellanurag@gmail.com">hellanurag@gmail.com</a>
+        <a href="https://www.linkedin.com/in/anuragreddya/">LinkedIn</a>
+        <a href="Anurag_Reddy_Aenugu_Resume.pdf">Résumé (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year">2026</span> Anurag Reddy Aenugu</div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
